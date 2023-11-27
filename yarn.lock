@@ -943,6 +943,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsconfig/node20@npm:^20.1.2":
+  version: 20.1.2
+  resolution: "@tsconfig/node20@npm:20.1.2"
+  checksum: e438fa9b93f0e6ea667affbbd3217692bf3f92db1b3dcbfba1dd141a7dbcd647c19ed87ce76871c723bed398759ec4a5590685f3e669b600c9371f143a19e0c1
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.1.14":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
@@ -3351,11 +3358,12 @@ __metadata:
   dependencies:
     "@mikro-orm/core": "npm:6.0.0-dev.200"
     "@mikro-orm/sqlite": "npm:6.0.0-dev.200"
+    "@tsconfig/node20": "npm:^20.1.2"
     "@types/jest": "npm:^29.5.10"
     "@types/node": "npm:^20.10.0"
     jest: "npm:^30.0.0-alpha.2"
     rimraf: "npm:^5.0.5"
-    ts-jest: "npm:^29.1.1"
+    ts-jest: "patch:ts-jest@npm%3A29.1.1#~/.yarn/patches/ts-jest-npm-29.1.1-04e888e48e.patch"
     tslib: "npm:^2.6.2"
     typescript: "npm:^5.3.2"
   peerDependencies:
@@ -4496,7 +4504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.1.1":
+"ts-jest@npm:29.1.1":
   version: 29.1.1
   resolution: "ts-jest@npm:29.1.1"
   dependencies:
@@ -4526,6 +4534,39 @@ __metadata:
   bin:
     ts-jest: cli.js
   checksum: 6c45e0aeeff9cc54a64f931c43e1b99f4a1f0ddf44786cc128e7e55603ab7473c8c8f62fd83bd7e51bfe83e3c0c683132152efaeb844516bf7c923f4e92d157d
+  languageName: node
+  linkType: hard
+
+"ts-jest@patch:ts-jest@npm%3A29.1.1#~/.yarn/patches/ts-jest-npm-29.1.1-04e888e48e.patch":
+  version: 29.1.1
+  resolution: "ts-jest@patch:ts-jest@npm%3A29.1.1#~/.yarn/patches/ts-jest-npm-29.1.1-04e888e48e.patch::version=29.1.1&hash=3ce0ad"
+  dependencies:
+    bs-logger: "npm:0.x"
+    fast-json-stable-stringify: "npm:2.x"
+    jest-util: "npm:^29.0.0"
+    json5: "npm:^2.2.3"
+    lodash.memoize: "npm:4.x"
+    make-error: "npm:1.x"
+    semver: "npm:^7.5.3"
+    yargs-parser: "npm:^21.0.1"
+  peerDependencies:
+    "@babel/core": ">=7.0.0-beta.0 <8"
+    "@jest/types": ^29.0.0
+    babel-jest: ^29.0.0
+    jest: ^29.0.0
+    typescript: ">=4.3 <6"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@jest/types":
+      optional: true
+    babel-jest:
+      optional: true
+    esbuild:
+      optional: true
+  bin:
+    ts-jest: cli.js
+  checksum: dc2dc8e48597fb041efaba2a4d8108d532756a1c8add1ec13dbef7d8bb02a16001edafc0266adc518b4f59b15cacb9287676437cb6a96ae27fe073a7e97ec603
   languageName: node
   linkType: hard
 
